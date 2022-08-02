@@ -1,0 +1,696 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+}
+
+/* Global tags*/
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(31, 119, 30, 0.815);
+  
+}
+
+span{
+    font-size: .9rem;
+     ;
+
+}
+
+h6{
+    font-size: 1.1rem;
+    color: 
+}
+
+/************************************** NavIgation Bar***********************************************/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 1vw 8vw; */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    position:fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+}
+nav img{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+nav .finding{
+    display:flex;
+}
+#menubtn{
+    width:30px;
+    height:30px;
+    display:none;
+}
+#menuclose{
+    display:none;
+}
+nav .finding ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+nav .finding ul li{
+    list-style: none;
+    margin-left: 30px;
+    /*** Use appropriate color from the logo color and use the color variable to do this ***/ 
+    color: rgba(31, 119, 30, 0.815);
+    font-size: 16px;
+    font-weight:500;
+    transition: 0,3s ease;
+}
+nav .finding ul li:hover {
+    color: rgb(161, 159, 159); 
+}
+
+
+/************************************** Home Bar***********************************************/
+#home {
+    background-image: linear-gradient(rgb(141, 136, 136), rgba(30, 112, 27, 0.562)), url("images/unipic.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+#home h2{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+
+}
+
+#home p{
+    color: #fff;
+    line-height: 25px;
+    font-size: 0.9rem;
+    width: 50%
+}
+#home a{
+    font-size: 1rem ;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 13px 35px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+#home .btn{
+    margin-top: 30px;
+}
+#home .a .green{
+    color:#fff;
+    background-color: rgba(31, 119, 30, 0.815);
+    transition: 0.3s  ;
+}
+#home .a .grey{
+    color:#fff;
+    background-color: rgb(161, 159, 159);
+    transition: 0.3s ;
+}
+#home a.green:hover{
+    color:rgba(31, 119, 30, 0.815);
+    background-color: #fff ;
+}
+#home a.grey:hover{
+    color:rgba(31, 119, 30, 0.815);
+    background-color: #fff ;
+}
+/************************************** Offerings Bar***********************************************/
+
+#offerings{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+
+}
+#offerings .firstOffer{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+#offerings .boxA{
+    background:#eaebea;
+    text-align: start;
+}
+#offerings .boxA i{
+    font-size: 2.3rem;
+    color:rgba(31, 119, 30, 0.815);
+}
+#offerings .boxA h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:rgba(31, 119, 30, 0.815);
+    padding: 13px 0 7px 0;
+}
+#offerings .boxA p{
+    font-size: 1rem;
+    font-weight: 400;
+    /*color:rgba(103, 214, 101, 0.815);*/
+    padding: 13px 0 7px 0;
+}
+#offerings .boxB{
+    background:#eaebea;
+    text-align: start;
+}
+#offerings .boxB i{
+    font-size: 2.3rem;
+    color:rgba(31, 119, 30, 0.815);;
+}
+#offerings .boxB h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:rgba(31, 119, 30, 0.815);
+    padding: 13px 0 7px 0;
+}
+#offerings .boxB p{
+    font-size: 1rem;
+    font-weight: 400;
+    /*color:rgba(103, 214, 101, 0.815);*/
+    padding: 13px 0 7px 0;
+}
+#offerings .boxC{
+    background:#eaebea;
+    text-align: start;
+}
+#offerings .boxC i{
+    font-size: 2.3rem;
+    color:rgba(31, 119, 30, 0.815);
+}
+#offerings .boxC h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:rgba(31, 119, 30, 0.815);
+    padding: 13px 0 7px 0;
+}
+#offerings .boxC p{
+    font-size: 1rem;
+    font-weight: 400;
+    /*color:rgba(103, 214, 101, 0.815);*/
+    padding: 13px 0 7px 0;
+}
+
+/************************************** Online Course Bar***********************************************/
+#Course{
+    padding: 8vw 8vw 8vw 5vw;
+    text-align: center;
+}
+
+#Course .courseBox{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px
+}
+
+#Course .boxOne{
+    text-align: start;
+    background: #eaebea;
+    height: 100%;
+    position: relative;
+}
+#Course .boxOne img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+}
+#Course .boxOne .deets{
+    padding: 15px 15px 0 15px;
+}
+#Course .boxOne .deets i{
+    font-size: .9rem;
+    color: rgba(31, 119, 30, 0.815);
+}
+#Course .boxOne .price{
+    background-color: rgba(31, 119, 30, 0.815);
+    color: #eaebea;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+#Course .boxTwo{
+    text-align: start;
+    background: #eaebea;
+    height: 100%;
+    position:relative;
+}
+#Course .boxTwo img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+}
+#Course .boxTwo .deets{
+    padding: 15px 15px 0 15px;
+}
+#Course .boxTwo .deets i{
+    font-size: .9rem;
+    color: rgba(31, 119, 30, 0.815);
+}
+#Course .boxTwo .price{
+    background-color: rgba(31, 119, 30, 0.815);
+    color: #eaebea;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+#Course .boxThree{
+    text-align: start;
+    background: #eaebea;
+    height: 100%;
+    position:relative;
+}
+#Course .boxThree img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+}
+#Course .boxThree .deets{
+    padding: 15px 15px 0 15px;
+}
+#Course .boxThree .deets i{
+    font-size: .9rem;
+    color: rgba(31, 119, 30, 0.815);
+}
+#Course .boxThree .price{
+    background-color: rgba(31, 119, 30, 0.815);
+    color: #eaebea;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+#Course .boxFour{
+    text-align: start;
+    background: #eaebea;
+    height: 100%;
+    position:relative;
+}
+#Course .boxFour img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+}
+
+#Course .boxFour .deets{
+    padding: 15px 15px 0 15px;
+}
+#Course .boxFour .deets i{
+    font-size: .9rem;
+    color: rgba(31, 119, 30, 0.815);
+}
+#Course .boxFour .price{
+    background-color: rgba(31, 119, 30, 0.815);
+    color: #eaebea;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+#Course .boxFive{
+    text-align: start;
+    background: #eaebea;
+    height: 100%;
+    position:relative;
+}
+#Course .boxFive img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+}
+#Course .boxFive .deets{
+    padding: 15px 15px 0 15px;
+}
+#Course .boxFive .deets i{
+    font-size: .9rem;
+    color: rgba(31, 119, 30, 0.815);
+}
+#Course .boxFive .price{
+    background-color: rgba(31, 119, 30, 0.815);
+    color: #eaebea;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+#Course .boxSix{
+    text-align: start;
+    background: #eaebea;
+    height: 100%;
+    position:relative;
+}
+#Course .boxSix img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+}
+#Course .boxSix .deets{
+    padding: 15px 15px 0 15px;
+}
+#Course .boxSix .deets i{
+    font-size: .9rem;
+    color: rgba(31, 119, 30, 0.815);
+}
+#Course .boxSix .price{
+    background-color: rgba(31, 119, 30, 0.815);
+    color: #eaebea;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+
+/************************************** Registration/Reminder Bar***********************************************/
+#registration{
+    background-image: linear-gradient(rgb(141, 136, 136), rgba(30, 112, 27, 0.562)), url("images/signup.jpg");
+    padding: 5vw 8vw 6vw 8vw;
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#registration .reminder{
+    color:#eaebea;
+}
+#registration .reminder h1{
+    color:#eaebea;
+}
+#registration .reminder .time{
+    display: flex;
+    margin-top: 50px;
+}
+#registration .reminder .time .date{
+    padding: 13px 33px;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    backdrop-filter:(4px);
+    margin: 0 5px 0 5px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#registration .form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: #eaebea;
+    padding:40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25); 
+}
+
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgba(31, 119, 30, 0.815);
+    outline:none;
+}
+#registration .form a.declare{
+    color: #eaebea;
+    background-color: rgba(31, 119, 30, 0.815);
+    transition: 0.3s ;
+    font-size: 1rem ;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 13px 35px;    
+    border-radius: 5px;
+    }
+#registration a.declare:hover{
+    color:rgba(31, 119, 30, 0.815);  
+    background-color: rgb(161, 159, 159);   
+}
+
+#registration .form .btn{
+    margin-top: 22px;
+}
+
+#registration .form input::placeholder{
+    color:#413c3c;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/************************************** Profile Bar***********************************************/
+#profile .expertbox img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    clip-path: circle();
+}
+#profile{
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+#profile .expertbox{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: .9rem;
+    margin-top: 50px;
+}
+#profile .expertbox .expert{
+    background: #eaebea;
+    padding: 30px 10px;
+}
+
+#profile .expertbox .expert .expertlinks i{
+    padding: 10px 13px;
+    border: 1px solid rgb(141, 136, 136);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.expertlinks i:hover{
+    background: rgba(31, 119, 30, 0.815);
+    border: 1px solid rgba(31, 119, 30, 0.815);
+    color:#eaebea;
+    cursor: pointer;
+}
+#profile .expertbox .expert .expertlinks{
+    margin-top: 10px
+}
+
+/************************************** Footer Bar***********************************************/
+footer{
+    padding:8vw;
+    background-color: darkgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+footer .footercolumn{
+    padding-bottom: 40px;
+}
+
+footer h3{
+    padding-bottom: 40px;
+    color:#eaebea;
+    font-weight: 600;
+}
+footer li{
+    list-style: none;
+    color:rgb(161, 159, 159);
+    font-size:15px;
+    cursor:pointer;
+    padding:10px 0;
+    transition:0.3s ease;
+}
+footer li:hover{
+    color: #eaebea;
+}
+footer p{
+    color: rgb(161, 159, 159);
+}
+footer .subscribe{
+    margin-top: 20px;
+}
+footer input{
+   width: 220px;
+   padding: 15px 12px;
+   border: none;
+   outline: none;
+   color:#eaebea;
+   background: rgb(161, 159, 159);
+}
+ .subscribe .grey{
+    font-size: 1rem ;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+footer .subscribe a.grey{
+    color: rgb(21, 107, 21);
+    background: #fff ;
+    transition:0.3s ease;
+}
+footer .subscribe a.grey:hover{
+    color: #eaebea;
+    background: rgb(21, 107, 21 ,0.815);
+}
+
+.footerB{
+    margin-top: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    flex-wrap: wrap;
+    color:#eaebea;
+}
+.expertlinks i{
+    padding: 10px 13px;
+    /**border: 1px solid rgb(141, 136, 136);**/
+    transition: 0.3s ease;
+    cursor: pointer;
+    color: #eaebea;
+    background: rgba(31, 119, 30, 0.815) ;
+}
+.expertlinks i:hover{
+    background:#eaebea;
+    border: 1px solid rgba(31, 119, 30, 0.815);
+    color:rgba(31, 119, 30, 0.815);
+    cursor: pointer;
+}
+
+@media (max-width: 769px) {
+    nav{
+        padding: 15px 20px;
+    }
+    nav img{
+        width:130px;
+    }
+    #menubtn{
+        display:initial;
+    }
+    #menuclose{
+        display:initial;
+    }
+    nav .finding ul{
+        position: absolute;
+        top: 0;
+        right: -220px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: flex-start;
+        width:220px;
+       
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(161, 159, 159, 0.318);
+        height:100vh;
+        transition: 0.3s ease;
+    }
+    nav .finding ul:hover{
+        color:rgba(142, 179, 141, 0.815);
+    }
+    nav .finding ul.active{
+        right:0;
+    }
+    nav .finding ul li{
+        padding:20px 0 20px 40px;
+        margin-left: 0;
+    }
+    nav .finding ul li a {
+        color:#eaebea;
+    }
+    #home p{
+        width:90%;
+    }
+    #home{
+        padding-top: 0px;
+    }
+    #offerings{
+        padding: 8vw 4vw 0 4vw;
+    }
+    #course{
+        padding:8vw 4vw 0 4vw;
+    }
+    #registration{
+        padding: 6vw 4vw 6vw 4vw;
+        margin-top: 8vw;
+    }
+    #registration .reminder .time{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:40px;
+    }
+    #profile{
+        padding:8vw 8vw 4vw 8vw;
+        text-align: center;
+    }
+    #footer .footerB .prolinks{
+        margin-top: 10px;
+    }
+}
+@media(475px){
+    #registration{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #registration .reminder .time{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
